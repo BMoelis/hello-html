@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben Moelis - Personal Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="nav-placeholder"></div>
+
+    <script>
+        fetch("navigation.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("nav-placeholder").innerHTML = data);
+    </script>
+
+    <header>
+        <h1>Ben Moelis</h1>
+        <h2>Entrepreneur | Consultant | MBA at Kellogg</h2>
+        <img src="https://media.licdn.com/dms/image/v2/D5603AQFCpjOM7aDmoA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1723733068261?e=1744243200&v=beta&t=fhalNQJFwQF4vtfrcfEovr6XMAY2f2tw_RkiX1yh2Zw"
+            alt="Ben Moelis Headshot" width="200">
+    </header>
+
+    <section>
+        <h3>About Me</h3>
+        <p>I'm an MBA student at Kellogg School of Management with a background in economics and experience in
+            consulting, tech, and entrepreneurship. Passionate about startups, venture capital, and AI-driven business
+            optimization.</p>
+    </section>
+
+    <section>
+        <h3>Education</h3>
+        <h4>Kellogg School of Management</h4>
+        <p>Full-time MBA student focusing on marketing, operations, finance, and startup branding. Marketing Director of
+            the Entrepreneurship and Venture Capital Club.</p>
+
+        <h4>Duke University</h4>
+        <p>Worked at the Coach K / Fuqua Center on Leadership and Ethics. Currently serving as an Alumni Undergraduate
+            Interviewer.</p>
+    </section>
+
+    <section>
+        <h3>Work Experience</h3>
+        <ul>
+            <li><strong>Deloitte Consulting</strong> - Business Analyst</li>
+            <li><strong>Yext, Inc.</strong> - Solutions Engineer & Partner Solutions Lead</li>
+            <li><strong>Lastrada AI</strong> - Founder & CEO</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Connect with Me</h3>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/benmoelis" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/BMoelis" target="_blank">GitHub</a></li>
+            <li><a href="https://lsv-mvp.vercel.app/" target="_blank">Lastrada AI</a></li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Contact Me</h3>
+        <form action="thanks.html" method="GET">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+
+</html>
